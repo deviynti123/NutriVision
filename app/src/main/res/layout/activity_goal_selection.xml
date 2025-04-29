@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Progress Bar & Step -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 / 7"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_gravity="end"/>
+
+        <!-- Question -->
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What’s your main goal\nwith NutriVision?"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="24dp"/>
+
+        <!-- RadioGroup for Goals -->
+        <RadioGroup
+            android:id="@+id/radioGoals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+
+            <RadioButton
+                android:id="@+id/goal_lose_weight"
+                style="@style/RadioButtonStyle"
+                android:text="Lose weight 🏃‍♂️🍏"/>
+
+            <RadioButton
+                android:id="@+id/goal_maintain_weight"
+                style="@style/RadioButtonStyle"
+                android:text="Maintain weight ⚖️🥗"/>
+
+            <RadioButton
+                android:id="@+id/goal_improve_fitness"
+                style="@style/RadioButtonStyle"
+                android:text="Improve fitness 🚴‍♂️🏋️"/>
+
+        </RadioGroup>
+
+        <!-- Continue Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnContinueName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Continue"
+            android:layout_marginTop="32dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_color"/>
+    </LinearLayout>
+</ScrollView>

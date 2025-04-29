@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background abu-abu -->
+    <item android:id="@android:id/background">
+        <shape android:shape="ring"
+            android:innerRadiusRatio="3"
+            android:thicknessRatio="12"
+            android:useLevel="false">
+            <solid android:color="#E0E0E0" />
+        </shape>
+    </item>
+
+    <!-- Progress ungu -->
+    <item android:id="@android:id/progress">
+        <shape android:shape="ring"
+            android:innerRadiusRatio="3"
+            android:thicknessRatio="12"
+            android:useLevel="true">
+            <solid android:color="#8B5CF6" />
+        </shape>
+    </item>
+</layer-list>
