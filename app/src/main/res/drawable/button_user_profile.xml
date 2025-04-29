@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gradasi ungu -->
+    <gradient
+        android:startColor="#A683E3"
+        android:endColor="#7F60D3"
+        android:angle="90" />
+
+    <!-- Sudut membulat -->
+    <corners android:radius="16dp" />
+
+    <!-- Padding opsional -->
+    <padding
+        android:left="12dp"
+        android:top="12dp"
+        android:right="12dp"
+        android:bottom="12dp" />
+</selector>

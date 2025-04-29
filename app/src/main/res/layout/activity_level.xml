@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Progress Bar & Step -->
+
+        <!-- Question -->
+        <TextView
+            android:id="@+id/activityQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What’s your activity level?"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="24dp"/>
+
+        <!-- RadioGroup for Activity Levels -->
+        <RadioGroup
+            android:id="@+id/radioActivityLevels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp">
+
+            <RadioButton
+                android:id="@+id/very_active"
+                style="@style/RadioButtonStyle"
+                android:text="Very Active 🏆🏃‍♂️" />
+
+            <RadioButton
+                android:id="@+id/active"
+                style="@style/RadioButtonStyle"
+                android:text="Active 🏃‍♀️🔥" />
+
+            <RadioButton
+                android:id="@+id/moderately_active"
+                style="@style/RadioButtonStyle"
+                android:text="Moderately Active 🏃‍♂️💪" />
+
+            <RadioButton
+                android:id="@+id/lightly_active"
+                style="@style/RadioButtonStyle"
+                android:text="Lightly Active 🏡🍃" />
+
+            <RadioButton
+                android:id="@+id/sedentary"
+                style="@style/RadioButtonStyle"
+                android:text="Sedentary 🪑🖥️" />
+        </RadioGroup>
+
+        <!-- Continue Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnContinueName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Continue"
+            android:layout_marginTop="32dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_color"/>
+    </LinearLayout>
+</ScrollView>
