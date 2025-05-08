@@ -1,21 +1,21 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Background abu-abu -->
+    <!-- Background track (abu-abu terang) -->
     <item android:id="@android:id/background">
         <shape android:shape="ring"
             android:innerRadiusRatio="3"
-            android:thicknessRatio="12"
+            android:thicknessRatio="25"
             android:useLevel="false">
-            <solid android:color="#E0E0E0" />
+            <solid android:color="#EEEEEE" />
         </shape>
     </item>
 
-    <!-- Progress ungu -->
+    <!-- Progress track (ungu Figma) -->
     <item android:id="@android:id/progress">
         <shape android:shape="ring"
             android:innerRadiusRatio="3"
-            android:thicknessRatio="12"
+            android:thicknessRatio="25"
             android:useLevel="true">
-            <solid android:color="#8B5CF6" />
+            <solid android:color="#7C4DFF" />
         </shape>
     </item>
 </layer-list>

@@ -1,72 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:padding="24dp"
+    android:background="#FFFF">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/activityQuestion"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp"
-        android:gravity="center_horizontal">
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="What’s your activity level?"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- Progress Bar & Step -->
+    <TextView
+        android:id="@+id/level_very_active"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Very Active 🏆🏃‍♂️"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activityQuestion" />
 
-        <!-- Question -->
-        <TextView
-            android:id="@+id/activityQuestion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="What’s your activity level?"
-            android:textColor="#000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginTop="24dp"/>
+    <TextView
+        android:id="@+id/level_active"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Active 🏃‍♀️🔥"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/level_very_active" />
 
-        <!-- RadioGroup for Activity Levels -->
-        <RadioGroup
-            android:id="@+id/radioActivityLevels"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="24dp">
+    <TextView
+        android:id="@+id/level_moderate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Moderately Active 🏃‍♂️💪"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/level_active" />
 
-            <RadioButton
-                android:id="@+id/very_active"
-                style="@style/RadioButtonStyle"
-                android:text="Very Active 🏆🏃‍♂️" />
+    <TextView
+        android:id="@+id/level_light"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Lightly Active 🏡🍃"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/level_moderate" />
 
-            <RadioButton
-                android:id="@+id/active"
-                style="@style/RadioButtonStyle"
-                android:text="Active 🏃‍♀️🔥" />
+    <TextView
+        android:id="@+id/level_sedentary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Sedentary 🪑🖥️"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/level_light" />
 
-            <RadioButton
-                android:id="@+id/moderately_active"
-                style="@style/RadioButtonStyle"
-                android:text="Moderately Active 🏃‍♂️💪" />
-
-            <RadioButton
-                android:id="@+id/lightly_active"
-                style="@style/RadioButtonStyle"
-                android:text="Lightly Active 🏡🍃" />
-
-            <RadioButton
-                android:id="@+id/sedentary"
-                style="@style/RadioButtonStyle"
-                android:text="Sedentary 🪑🖥️" />
-        </RadioGroup>
-
-        <!-- Continue Button -->
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnContinueName"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:text="Continue"
-            android:layout_marginTop="32dp"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/button_color"/>
-    </LinearLayout>
-</ScrollView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinueName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/button_color"
+        android:text="Continue"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/level_sedentary" />
+</androidx.constraintlayout.widget.ConstraintLayout>

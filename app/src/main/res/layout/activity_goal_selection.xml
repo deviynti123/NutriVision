@@ -1,71 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="24dp"
     android:background="#F5F5F5">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="24dp"
-        android:gravity="center_horizontal">
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="What’s your main goal\nwith NutriVision?"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- Progress Bar & Step -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="6 / 7"
-            android:textColor="#000"
-            android:textSize="14sp"
-            android:layout_gravity="end"/>
+    <TextView
+        android:id="@+id/goal1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Lose weight 🏃‍♂️🍏"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/questionText" />
 
-        <!-- Question -->
-        <TextView
-            android:id="@+id/questionText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="What’s your main goal\nwith NutriVision?"
-            android:textColor="#000"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginTop="24dp"/>
+    <TextView
+        android:id="@+id/goal2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Maintain weight ⚖️🥗"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goal1" />
 
-        <!-- RadioGroup for Goals -->
-        <RadioGroup
-            android:id="@+id/radioGoals"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="24dp">
+    <TextView
+        android:id="@+id/goal3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Improve fitness 🚴‍♂️🏋️"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goal2" />
 
-            <RadioButton
-                android:id="@+id/goal_lose_weight"
-                style="@style/RadioButtonStyle"
-                android:text="Lose weight 🏃‍♂️🍏"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinueName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/button_color"
+        android:text="Continue"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goal3" />
 
-            <RadioButton
-                android:id="@+id/goal_maintain_weight"
-                style="@style/RadioButtonStyle"
-                android:text="Maintain weight ⚖️🥗"/>
-
-            <RadioButton
-                android:id="@+id/goal_improve_fitness"
-                style="@style/RadioButtonStyle"
-                android:text="Improve fitness 🚴‍♂️🏋️"/>
-
-        </RadioGroup>
-
-        <!-- Continue Button -->
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnContinueName"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:text="Continue"
-            android:layout_marginTop="32dp"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/button_color"/>
-    </LinearLayout>
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
