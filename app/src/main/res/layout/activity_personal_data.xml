@@ -25,16 +25,17 @@
     </LinearLayout>
 
     <!-- Title -->
+
+    <!-- Name Section -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
         android:text="Personal Data"
-        android:textSize="24sp"
         android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_marginBottom="24dp"/>
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-    <!-- Name Section -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

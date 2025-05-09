@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:right="2dp">
+        <!-- Background Color of the Bar -->
+        <shape>
+            <solid android:color="#e0e0e0"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+    <item android:left="2dp">
+        <!-- Progress Color (can represent BMI level) -->
+        <shape>
+            <solid android:color="#4CAF50"/> <!-- Green color for Healthy -->
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+</layer-list>
