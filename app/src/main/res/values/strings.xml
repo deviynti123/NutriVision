@@ -2,5 +2,6 @@
     <string name="app_name">Nutrivision</string>
     <string name="agreement"> I agree to NutriVision Terms and Conditions.</string>
     <string name="title"> Create a NutriVision account to track your meals,\nstay active and achieve your health goals.</string>
+    <string name="recipes">Recipes</string>
 </resources>
 
