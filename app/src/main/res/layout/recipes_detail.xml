@@ -1,0 +1,188 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Back" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="103dp"
+        android:layout_height="36dp"
+        android:text="Food Details"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/backButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Food Name -->
+
+    <!-- Nutrient Summary Box -->
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Sup ayam"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nutrientBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/foodName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/caloriesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150"
+            android:textColor="#F44336"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/carbsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.0g"
+            app:layout_constraintTop_toTopOf="@id/caloriesValue"
+            app:layout_constraintStart_toEndOf="@id/caloriesValue"
+            app:layout_constraintStart_margin="32dp" />
+
+        <TextView
+            android:id="@+id/proteinValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20.4g"
+            app:layout_constraintTop_toTopOf="@id/caloriesValue"
+            app:layout_constraintStart_toEndOf="@id/carbsValue"
+            app:layout_constraintStart_margin="32dp" />
+
+        <TextView
+            android:id="@+id/fatValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15.2g"
+            app:layout_constraintTop_toTopOf="@id/caloriesValue"
+            app:layout_constraintStart_toEndOf="@id/proteinValue"
+            app:layout_constraintStart_margin="32dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Number of Servings Label -->
+    <TextView
+        android:id="@+id/servingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of servings"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/nutrientBox"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Serving Input -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/servingInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/servingLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/servingEditText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:drawableStart="@drawable/ic_edit"
+            android:hint="1"
+            android:padding="10dp"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/unitText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="Gram"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/servingEditText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Nutrition Facts Label -->
+    <TextView
+        android:id="@+id/nutritionFactsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nutrition facts"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/servingInput"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Nutrition Facts List (could be RecyclerView) -->
+    <LinearLayout
+        android:id="@+id/nutritionList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_white"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nutritionFactsLabel">
+
+        <!-- Example Entry -->
+        <TextView android:text="Calories         10g" />
+
+        <TextView android:text="Fat              2g" />
+
+        <TextView android:text="Cholesterol      0g" />
+
+        <TextView android:text="Protein          3g" />
+
+        <TextView android:text="Carbohydrates   20g" />
+
+        <TextView android:text="Fiber           15g" />
+
+        <TextView android:text="Sugar            5g" />
+
+        <TextView android:text="Sodium           7g" />
+
+        <TextView android:text="Kalium           0g" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
