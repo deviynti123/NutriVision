@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F5F5">
@@ -11,49 +10,51 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-        <!-- Back & Title -->
-        <ImageView
+        <!-- Back Button -->
+        <ImageButton
             android:id="@+id/btnBack"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_back_arrow"
-            android:contentDescription="Back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <!-- Profile Picture + Name -->
-
+        <!-- Title "Profile" -->
         <TextView
             android:id="@+id/titleProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="132dp"
-            android:text="Profile"
+            android:layout_marginTop="12dp"
+            android:text="@string/user_profile_title"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/btnBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
             app:layout_constraintStart_toEndOf="@id/btnBack"
-            app:layout_constraintTop_toTopOf="@id/btnBack"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toTopOf="@id/btnBack" />
 
-        <ImageView
+        <!-- Profile Image -->
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/profileImage"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/ic_profile_avatar"
-            android:contentDescription="Avatar"
-            android:backgroundTint="#E3DFFF"
-            app:layout_constraintTop_toBottomOf="@id/btnBack"
-            app:layout_constraintTop_margin="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/circle_background"
+            android:contentDescription="@string/user_content_description"
+            android:src="@drawable/ic_profile"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/titleProfile" />
 
+        <!-- Profile Name -->
         <TextView
             android:id="@+id/profileName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dudung"
+            android:text="@string/user_name"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="#000000"
@@ -62,7 +63,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="12dp" />
 
-        <!-- Stats: Height / Weight / Age -->
+        <!-- Stats Container -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/statsContainer"
             android:layout_width="0dp"
@@ -78,26 +79,36 @@
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:orientation="vertical"
-                android:background="@drawable/rounded_white_box"
+                android:background="@drawable/rounded_search_box"
                 android:padding="8dp"
                 android:gravity="center"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/statWeight"
-                app:layout_constraintHorizontalWeight="1">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_height" />
+                app:layout_constraintHorizontal_weight="1">
 
                 <TextView
-                    android:text="Height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_profile_ruler"
+                    android:contentDescription="@string/user_content_description1" />
+                <TextView
+                    android:id="@+id/tvHeightLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/user_profile_height"
                     android:textColor="#000000"
-                    android:textSize="14sp"
-                    android:layout_marginTop="4dp" />
-
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/tvHeightValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/user_profile_height_info"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
             </LinearLayout>
 
             <!-- Weight -->
@@ -106,7 +117,7 @@
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:orientation="vertical"
-                android:background="@drawable/rounded_white_box"
+                android:background="@drawable/rounded_search_box"
                 android:padding="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
@@ -114,26 +125,31 @@
                 app:layout_constraintStart_toEndOf="@id/statHeight"
                 app:layout_constraintEnd_toStartOf="@id/statAge"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontalWeight="1">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_weight" />
+                app:layout_constraintHorizontal_weight="1">
 
                 <TextView
-                    android:text="Weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_profile_weight_measurement"
+                    android:textSize="24sp"
+                    android:contentDescription="@string/user_content_description2" />
+                <TextView
+                    android:id="@+id/tvWeightLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/user_profile_weight"
                     android:textColor="#000000"
-                    android:textSize="14sp"
-                    android:layout_marginTop="4dp" />
-
+                    android:textSize="14sp" />
                 <TextView
-                    android:text="68kg"
+                    android:id="@+id/tvWeightValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/user_profile_weight_info"
                     android:textStyle="bold"
                     android:textSize="16sp"
-                    android:textColor="#000000"
-                    android:layout_marginTop="2dp" />
+                    android:textColor="#000000" />
             </LinearLayout>
 
             <!-- Age -->
@@ -142,61 +158,61 @@
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:orientation="vertical"
-                android:background="@drawable/rounded_white_box"
+                android:background="@drawable/rounded_search_box"
                 android:padding="8dp"
                 android:gravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@id/statWeight"
-                app:layout_constraintHorizontalWeight="1">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_age" />
+                app:layout_constraintHorizontal_weight="1">
 
                 <TextView
-                    android:text="Age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_profile_birthday"
+                    android:textSize="24sp"
+                    android:contentDescription="@string/user_content_description3" />
+
+                <TextView
+                    android:id="@+id/tvAgeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/user_profile_age"
                     android:textColor="#000000"
-                    android:textSize="14sp"
-                    android:layout_marginTop="4dp" />
-
+                    android:textSize="14sp" />
                 <TextView
-                    android:text="20"
+                    android:id="@+id/tvAgeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/user_profile_age_count"
                     android:textStyle="bold"
                     android:textSize="16sp"
-                    android:textColor="#000000"
-                    android:layout_marginTop="2dp" />
+                    android:textColor="#000000" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <!-- Section Title -->
-
-        <!-- List Items -->
-        <!-- Gunakan include atau duplikasikan LinearLayout untuk masing-masing item seperti sebelumnya -->
-
-        <!-- Contoh satu item: Personal Info -->
-
+        <!-- Account Section -->
         <TextView
             android:id="@+id/accountLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="64dp"
-            android:text="Account"
+            android:text="@string/user_profile_account_title"
             android:textColor="#000000"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/statsContainer" />
+            app:layout_constraintTop_toBottomOf="@id/statsContainer"
+            app:layout_constraintStart_toStartOf="parent" />
 
+        <!-- Personal Information -->
         <LinearLayout
             android:id="@+id/personalInfo"
             android:layout_width="0dp"
             android:layout_height="56dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/rounded_white_box"
+            android:background="@drawable/rounded_search_box"
             android:clickable="true"
             android:focusable="true"
             android:gravity="center_vertical"
@@ -204,37 +220,101 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/accountLabel">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_personal_info" />
-
+                android:contentDescription="@string/user_profile_desc"
+                android:src="@drawable/ic_info" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_weight="1"
-                android:text="Personal Information"
+                android:text="@string/user_profile_personal_information"
                 android:textColor="#000000"
                 android:textSize="16sp" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/user_profile_desc1"
+                android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <!-- Adjust Goals -->
+        <LinearLayout
+            android:id="@+id/adjustGoals"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_search_box"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/personalInfo">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_chevron_right" />
+                android:src="@drawable/ic_adjust"
+                android:contentDescription="@string/user_profile_content_goals" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:text="@string/user_profile_adjust_goals"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/content"
+                android:src="@drawable/ic_arrow_right" />
         </LinearLayout>
 
-        <TextView
-            android:text="173 cm"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="78dp"
-            tools:layout_editor_absoluteY="293dp" />
+        <!-- Notification -->
+        <LinearLayout
+            android:id="@+id/notification"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_search_box"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/adjustGoals">
 
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_notification"
+                android:contentDescription="@string/user_content_description4" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:text="@string/user_profile_notification"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/content"
+                android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

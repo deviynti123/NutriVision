@@ -1,10 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     android:background="#FFFFFF">
 
     <!-- Back Button -->
@@ -12,8 +12,10 @@
         android:id="@+id/backButton"
         android:layout_width="24dp"
         android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/ic_arrow_back"
-        android:contentDescription="Back"
+        android:contentDescription="@string/content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,8 +23,8 @@
         android:id="@+id/mealTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
-        android:text="Lunch"
+        android:layout_marginStart="120dp"
+        android:text="@string/scan_lunch_title"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/backButton"
@@ -32,21 +34,22 @@
         android:id="@+id/searchBar"
         android:layout_width="0dp"
         android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/search_background"
-        android:hint="Search"
+        android:hint="@string/scan_lunch_hints"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/backButton" />
 
     <LinearLayout
         android:id="@+id/scanContainer"
         android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="12dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="24dp"
         android:background="#99A2F8"
         android:gravity="center"
         android:orientation="vertical"
@@ -58,23 +61,26 @@
         <!-- Kotak putih di dalam kotak ungu -->
         <LinearLayout
             android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:layout_margin="8dp"
-            android:background="#FFFFFF"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_white"
             android:gravity="center"
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:contentDescription="Scan Icon"
+                android:layout_width="25dp"
+                android:layout_height="26dp"
+                android:contentDescription="@string/scan_lunch_content"
                 android:src="@drawable/ic_scan_meal" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Scan a Meal"
+                android:text="@string/scan_lunch_subhead"
                 android:textColor="#000000"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -83,14 +89,17 @@
 
     <ScrollView
         android:id="@+id/scrollContainer"
-        android:layout_width="395dp"
+        android:layout_width="0dp"
         android:layout_height="476dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/scanContainer"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:id="@+id/foodListContainer"
@@ -120,7 +129,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Apel"
+                        android:text="@string/scan_lunch_fruit"
                         android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -128,7 +137,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="52 Kcal · 150g"
+                        android:text="@string/scan_lunch_fruit_info"
                         android:textColor="#666666"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -138,7 +147,7 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:background="@null"
-                    android:contentDescription="Add"
+                    android:contentDescription="@string/add"
                     android:src="@drawable/ic_add_circle"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -149,4 +158,3 @@
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

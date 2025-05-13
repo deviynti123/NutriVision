@@ -20,7 +20,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginBottom="24dp"
-            android:contentDescription="Back"
+            android:contentDescription="@string/content"
             android:src="@drawable/ic_back_arrow" />
 
         <!-- Title -->
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Join NutriVision Today!"
+            android:text="@string/register_title"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -46,7 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
-            android:text="Email"
+            android:text="@string/register_email"
             android:textColor="#000000"
             android:textSize="14sp" />
 
@@ -58,7 +58,7 @@
             android:background="@drawable/edittext_border"
             android:drawableStart="@drawable/ic_email"
             android:drawablePadding="10dp"
-            android:hint="Enter your email"
+            android:hint="@string/register_insert_email"
             android:inputType="textEmailAddress"
             android:paddingHorizontal="16dp" />
 
@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
-            android:text="Password"
+            android:text="@string/register_password"
             android:textColor="#000000"
             android:textSize="14sp" />
 
@@ -80,7 +80,7 @@
             android:drawableStart="@drawable/ic_lock"
             android:drawableEnd="@drawable/ic_eye"
             android:drawablePadding="10dp"
-            android:hint="Enter your password"
+            android:hint="@string/register_insert_password"
             android:inputType="textPassword"
             android:paddingHorizontal="16dp" />
 
@@ -106,7 +106,7 @@
                 android:id="@+id/tv_already_have_account"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Already have an account? "
+                android:text="@string/register_account"
                 android:textColor="#000000"
                 android:textSize="14sp" />
 
@@ -116,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:focusable="true"
-                android:text="Sign in"
+                android:text="@string/sign_in"
                 android:textColor="#5263F8"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -129,10 +129,8 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="40dp"
             android:background="@drawable/button_color"
-            android:text="Sign up"
+            android:text="@string/sign_up"
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
-
-
     </LinearLayout>
 </ScrollView>

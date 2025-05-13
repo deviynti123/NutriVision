@@ -26,10 +26,11 @@
         android:id="@+id/wheelPickerLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_margin="32dp"
         app:layout_constraintTop_toBottomOf="@id/tvQuestionBirthday">
@@ -40,8 +41,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:theme="@style/WheelPickerStyle"
-            android:descendantFocusability="blocksDescendants" />
+            android:descendantFocusability="blocksDescendants"
+            android:theme="@style/WheelPickerStyle" />
 
         <!-- Day Picker -->
         <NumberPicker
@@ -49,16 +50,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:theme="@style/WheelPickerStyle"
-            android:descendantFocusability="blocksDescendants" />
+            android:descendantFocusability="blocksDescendants"
+            android:theme="@style/WheelPickerStyle" />
 
         <!-- Year Picker -->
         <NumberPicker
             android:id="@+id/yearPicker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:theme="@style/WheelPickerStyle"
-            android:descendantFocusability="blocksDescendants" />
+            android:descendantFocusability="blocksDescendants"
+            android:theme="@style/WheelPickerStyle" />
 
     </LinearLayout>
 
@@ -66,16 +67,15 @@
         android:id="@+id/btnContinueBirthday"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginTop="392dp"
+        android:layout_marginTop="116dp"
         android:background="@drawable/button_color"
         android:text="Continue"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_margin="48dp"
         app:layout_constraintTop_toBottomOf="@id/wheelPickerLayout" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

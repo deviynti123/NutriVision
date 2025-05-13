@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#0000FF" /> <!-- Underweight -->
+            <size android:width="20dp" />
+        </shape>
+    </item>
+    <item android:left="20dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#4CAF50" /> <!-- Normal -->
+            <size android:width="20dp" />
+        </shape>
+    </item>
+    <item android:left="40dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFEB3B" /> <!-- Overweight -->
+            <size android:width="20dp" />
+        </shape>
+    </item>
+    <item android:left="60dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FF9800" /> <!-- Obese 1 -->
+            <size android:width="20dp" />
+        </shape>
+    </item>
+    <item android:left="80dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F44336" /> <!-- Obese 2 -->
+            <size android:width="20dp" />
+        </shape>
+    </item>
+</layer-list>

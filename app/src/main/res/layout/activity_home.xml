@@ -1,72 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout_home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
     android:padding="24dp">
 
     <!-- Placeholder Logo -->
     <View
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#CCCCCC"
+        android:id="@+id/logo_placeholder"
+        android:layout_width="207dp"
+        android:layout_height="130dp"
         android:layout_marginTop="48dp"
-        android:layout_marginBottom="32dp" />
+        android:background="@drawable/splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Title -->
     <TextView
         android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Let’s Get Stated!"
+        android:text="@string/home_title"
+        android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#000000" />
+        app:layout_constraintTop_toBottomOf="@id/logo_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp" />
 
     <!-- Subtitle -->
     <TextView
         android:id="@+id/subtitle_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Let’s Dive Into your account"
+        android:text="@string/home_subhead"
         android:textSize="16sp"
         android:textColor="#808080"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="40dp" />
 
-    <!-- Sign Up Button -->
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_sign_up"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sign up"
-        android:background="@drawable/button_color"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="24dp" />
-
-    <!-- Sign In Button -->
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_sign_in"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sign in"
-        android:background="@drawable/button_color"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="48dp" />
 
     <!-- Footer -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sign_up"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:background="@drawable/button_color"
+        android:text="@string/home_button1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sign_in"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_color"
+        android:text="@string/home_button2"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_sign_up" />
+
     <TextView
         android:id="@+id/footer_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Privacy Policy . Terms of Service"
-        android:textSize="12sp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/home_policy"
         android:textColor="#888888"
-        android:layout_marginBottom="48dp" />
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_sign_in"
+        app:layout_constraintVertical_bias="1.0" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

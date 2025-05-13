@@ -3,5 +3,247 @@
     <string name="agreement"> I agree to NutriVision Terms and Conditions.</string>
     <string name="title"> Create a NutriVision account to track your meals,\nstay active and achieve your health goals.</string>
     <string name="recipes">Recipes</string>
+    <string name="birthday_title">What is your Birthday</string>
+    <string name="button">Continue</string>
+    <string name="content">Back</string>
+    <string name="sign_in">sign in</string>
+    <string name="sign_up">sign up</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="nutrivision_image">Nutrivision Logo</string>
+    <string name="scan_button">Scan</string>
+
+    <string name="register_title">Join NutriVision Today!</string>
+    <string name="register_email">Email</string>
+    <string name="register_insert_email">Enter your email</string>
+    <string name="register_password">Password</string>
+    <string name="register_insert_password">Enter your password</string>
+    <string name="register_account">Already have an account?</string>
+
+
+    <string name="calorie_personalized">Your personalized calorie plan is ready!</string>
+    <string name="calorie_button">Start your plan now!</string>
+    <string name="greeting1">Good Morning,</string>
+    <string name="greeting2">Dudung</string>
+    <string name="dashboard_count">Count Your Daily Calories 🥑</string>
+    <string name="dashboard_eaten">Eaten 3,143</string>
+    <string name="dashboard_cal">285 Kcal left</string>
+    <string name="dashboard_carbs">Carb</string>
+    <string name="dashboard_protein">Protein</string>
+    <string name="dashboard_fat">Fat</string>
+    <string name="dashboard_nutrition">20 / 143 g</string>
+    <string name="dashboard_bmi_title">Your BMI</string>
+    <string name="dashboard_bmi_count">23.7</string>
+    <string name="dashboard_bmi_result">Healthy</string>
+    <string name="dashboard_bmi_weight">Your Weight is</string>
+    <string name="dashboard_bmi_bar1">Underweight</string>
+    <string name="dashboard_bmi_bar2">Normal</string>
+    <string name="dashboard_bmi_bar3">Overweight</string>
+    <string name="dashboard_bmi_bar4">Obese1</string>
+    <string name="dashboard_bmi_bar5">Obese2</string>
+    <string name="dashboard_meals_title">Planned Meals</string>
+    <string name="dashboard_view_title">View All</string>
+    <string name="dashboard_meals1">Breakfast</string>
+    <string name="dashboard_meals2">Lunch</string>
+    <string name="dashboard_meals3">Dinner</string>
+    <string name="dashboard_meals4">Snack</string>
+    <string name="dashboard_text_size">10sp</string>
+    <!-- Breakfast-->
+    <string name="dashboard_content_desc1">Breakfast icon</string>
+    <string name="dashboard_content_desc_item1">Add breakfast item</string>
+    <string name="dashboard_item1">Apple</string>
+    <string name="dashboard_subhead1">1 Buah</string>
+    <string name="dashboard_cal1">52 Kcal</string>
+    <string name="dashboard_icon_breakfast">🌞</string>
+    <!-- Lunch-->
+    <string name="dashboard_content_desc2">Lunch icon</string>
+    <string name="dashboard_content_desc_item2">Add lunch item</string>
+    <string name="dashboard_item2">Apple</string>
+    <string name="dashboard_subhead2">1 Buah</string>
+    <string name="dashboard_cal2">52 Kcal</string>
+    <string name="dashboard_icon_lunch">🌞</string>
+    <!-- Dinner -->
+    <string name="dashboard_content_desc3">Breakfast icon</string>
+    <string name="dashboard_content_desc_item3">Add breakfast item</string>
+    <string name="dashboard_item3">Apple</string>
+    <string name="dashboard_subhead3">1 Buah</string>
+    <string name="dashboard_cal3">52 Kcal</string>
+    <string name="dashboard_icon_dinner">🌞</string>
+    <!-- Snack-->
+    <string name="dashboard_content_desc4">Breakfast icon</string>
+    <string name="dashboard_content_desc_item4">Add breakfast item</string>
+    <string name="dashboard_item4">Apple</string>
+    <string name="dashboard_subhead4">1 Buah</string>
+    <string name="dashboard_cal4">52 Kcal</string>
+    <string name="dashboard_icon_snack">🌞</string>
+
+    <string name="gender_title">What is your gender?</string>
+    <string name="gender_type1">Male</string>
+    <string name="gender_type2">Female</string>
+
+    <string name="goal_title">What is your goal with Nutrivision?</string>
+    <string name="goal_selection1">Lose weight 🏃‍♂️🍏</string>
+    <string name="goal_selection2">Gain Weight 🚴‍♂️🏋️</string>
+    <string name="goal_selection3">Maintain weight ⚖️🥗</string>
+
+    <string name="height_title">How tall are you</string>
+    <string name="height_insert">Enter your height (cm)</string>
+
+    <string name="home_title">Let’s Get Stated!</string>
+    <string name="home_subhead">et’s Dive Into your account</string>
+    <string name="home_button1">Sign in</string>
+    <string name="home_button2">Sign up</string>
+    <string name="home_policy">Privacy Policy . Terms of Service</string>
+
+    <string name="activity_title">What’s your activity level?</string>
+    <string name="activity_level1">Very Active 🏆🏃‍</string>
+    <string name="activity_level2">Active 🏃‍♀️🔥</string>
+    <string name="activity_level3">Moderately Active 🏃‍♂️💪</string>
+    <string name="activity_level4">Lightly Active 🏡🍃</string>
+    <string name="activity_level5">Sedentary 🪑🖥️</string>
+
+    <string name="login_title">Welcome Back</string>
+    <string name="login_subhead">Login to your account to continue.</string>
+    <string name="login_email">email</string>
+    <string name="login_edittext_email">Enter your email</string>
+    <string name="login_password">Password</string>
+    <string name="login_edittext_password">Enter your password</string>
+    <string name="login_forgot_password">Forgot Password?</string>
+    <string name="login_recovery">Do not have an account?</string>
+    <string name="login_button">login</string>
+
+    <string name="name_title">What is your name?</string>
+    <string name="name_insert">Enter your name...</string>
+
+    <string name="content_desc">Back</string>
+    <string name="data_title">Personal Data</string>
+    <string name="data_subhead">Name</string>
+    <string name="data_birthday_title">Birthday Date</string>
+    <string name="data_content_desc2">Calendar</string>
+    <string name="data_height_title">Height</string>
+    <string name="data_measure1">cm</string>
+    <string name="data_weight_title">Weight</string>
+    <string name="data_measure2">kg</string>
+    <string name="data_button">save changes</string>
+
+    <string name="personalized_title">Personalizing your NutriVision experience...</string>
+    <string name="percentage">65%</string>
+    <string name="personalized_loading_sub">Hang tight! We are crafting a personalized plan just for you.</string>
+
+    <string name="recipe_title">Recipes</string>
+    <string name="recipe_search">Search for Recipes</string>
+    <string name="recipe_food_title">Banana Protein Oat</string>
+    <string name="recipe_content_desc">Calorie Icon</string>
+    <string name="recipe_content_subhead">250 Calorie</string>
+    <string name="recipe_content_nutrition">12g 🥚  4g 🍚  4g 🥑</string>
+
+    <string name="recipe_detail_title">Recipe Details</string>
+    <string name="recipe_detail_food">sup ayam spesial</string>
+    <string name="recipe_detail_content">cocok dikonsumsi untuk makan siang</string>
+    <string name="recipe_detail_info">🔥 Nutrition Info (per 1 serving)</string>
+    <string name="recipe_detail_number">150</string>
+    <string name="recipe_detail_measurement">kcal</string>
+    <string name="recipe_detail_content_desc">carbs icon</string>
+    <string name="recipe_detail_number_carbs">24</string>
+    <string name="recipe_detail_measurement_carbs">carbs</string>
+    <string name="recipe_detail_content_desc1">protein icon</string>
+    <string name="recipe_detail_number_protein">20.4g</string>
+    <string name="recipe_detail_measurement_protein">protein</string>
+    <string name="recipe_detail_content_desc2">fat icon</string>
+    <string name="recipe_detail_number_fat">15.2g</string>
+    <string name="recipe_detail_measurement_fat">fat</string>
+    <string name="recipe_detail_ingredients_title">✔ Ingredients (1 Serving)</string>
+    <string name="recipe_detail_ingredients_content">• 200g daging ayam\n• 1 buah wortel\n• 1 kentang kecil\n• 1 batang seledri\n• 1 batang daun bawang\n• 750 ml air\n• 2 sdm bawang putih\n• 1/2 sdt merica\n• Garam secukupnya\n• Kaldu ayam bubuk (opsional)"
+    </string>
+    <string name="recipe_detail_cook_title"> ✔ Cooking</string>
+    <string name="recipe_detail_cook_content"> 1. Rebus air panci, masukan ayam dan bawang putih, masak hingga ayam matang.\n2. Angkat ayam, suwir lalu potong kecil.\n3. Masukan kembali ke dalam panci.\n4. Tambahkan wortel dan kentang, masak hingga empuk.\n5. Masukan seledri, daun bawang, merica, dan garam. Koreksi rasa.\n6. Masak 5 menit lagi lalu sajikan."
+</string>
+    <string name="recipe_detail_comments_title">Comments</string>
+    <string name="recipe_detail_user_desc">User Profile</string>
+    <string name="recipe_detail_users">Rina</string>
+    <string name="recipe_detail_comments">Cocok untuk menu makan malam yang sehat dan tidak bikin begah.</string>
+
+    <string name="weight_title"> What is your current Weight?</string>
+    <string name="weight_insert"> Enter your weight (kg)</string>
+
+    <string name="food_details_title"> Food Details</string>
+    <string name="food_details_content"> Update</string>
+    <string name="food_details_subhead"> Sup ayam</string>
+    <string name="food_details_desc"> calories</string>
+    <string name="food_details_count"> 150</string>
+    <string name="food_details_carbs_title">Carbs </string>
+    <string name="food_details_carbs_info">10g </string>
+    <string name="food_details_protein_title">protein</string>
+    <string name="food_details_protein_info">20.4g</string>
+    <string name="food_details_fat_title">fat</string>
+    <string name="food_details_fat_info">45.9 g</string>
+    <string name="food_details_section">Number of servings</string>
+    <string name="food_details_content_desc">edit</string>
+    <string name="food_details_number_servings">1</string>
+    <string name="food_details_number_measurement">gram</string>
+    <string name="food_details_nutrition_title">Nutrition Facts</string>
+    <string name="food_details_measurement">kcal</string>
+    <string name="food_details_measurement1">g</string>
+    <string name="food_info">cholestrol</string>
+    <string name="food_info1">carbohydrates</string>
+    <string name="food_details_info2">sugar</string>
+
+    <string name="scan_breakfast_title">Breakfast</string>
+    <string name="scan_breakfast_hints">search</string>
+    <string name="scan_breakfast_content">scan icon</string>
+    <string name="scan_breakfast_subhead">Scan a Meal</string>
+    <string name="scan_breakfast_fruit">Apel</string>
+    <string name="scan_breakfast_fruit_info">52 Kcal · 150g</string>
+
+    <string name="scan_dinner_title">Dinner</string>
+    <string name="scan_dinner_hints">search</string>
+    <string name="scan_dinner_content">scan icon</string>
+    <string name="scan_dinner_subhead">Scan a Meal</string>
+    <string name="scan_dinner_fruit">Apel</string>
+    <string name="scan_dinner_fruit_info">52 Kcal · 150g</string>
+
+    <string name="scan_lunch_title">Lunch</string>
+    <string name="scan_lunch_hints">search</string>
+    <string name="scan_lunch_content">scan icon</string>
+    <string name="scan_lunch_subhead">Scan a Meal</string>
+    <string name="scan_lunch_fruit">Apel</string>
+    <string name="scan_lunch_fruit_info">52 Kcal · 150g</string>
+
+    <string name="scan_snack_title">Snack</string>
+    <string name="scan_snack_hints">search</string>
+    <string name="scan_snack_content">scan icon</string>
+    <string name="scan_snack_subhead">Scan a Meal</string>
+    <string name="scan_snack_fruit">Apel</string>
+    <string name="scan_snack_fruit_info">52 Kcal · 150g</string>
+
+    <string name="scan_result_title">Scan Results</string>
+    <string name="scan_result_fruit">orange</string>
+    <string name="scan_result_fruit1">lemon</string>
+    <string name="scan_result_info">52 Kcal · 150g</string>
+    <string name="scan_result_add">Add Orange</string>
+
+    <string name="user_profile_title">profile</string>
+    <string name="user_content_description">profile</string>
+    <string name="user_name">Dudung</string>
+    <string name="user_profile_ruler">📏</string>
+    <string name="user_content_description1">Height Icon</string>
+    <string name="user_profile_height">Height</string>
+    <string name="user_profile_height_info">173 cm</string>
+    <string name="user_profile_weight_measurement">⚖️</string>
+    <string name="user_profile_weight">Weight</string>
+    <string name="user_content_description2">Weight Icon</string>
+    <string name="user_profile_weight_info">68kg</string>
+    <string name="user_profile_birthday">🎂</string>
+    <string name="user_content_description3">Age Icon</string>
+    <string name="user_profile_age">Age</string>
+    <string name="user_profile_age_count"> 20</string>
+    <string name="user_profile_account_title"> Account</string>
+    <string name="user_profile_desc"> Personal Info Icon</string>
+    <string name="user_profile_personal_information"> Personal Information</string>
+    <string name="user_profile_desc1">Chevron Icon</string>
+    <string name="user_profile_content_goals">Adjust Goals Icon</string>
+    <string name="user_profile_adjust_goals">Adjust Goals</string>
+    <string name="user_profile_notification">Notifications</string>
+    <string name="user_content_description4">Notification Icon</string>
 </resources>
 
